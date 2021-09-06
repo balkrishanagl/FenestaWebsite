@@ -1,2 +1,0 @@
-ExternalId  LeadId      First Name  Phone1      Phone2      Email Address  City        Requirement  Source      Received Date  List Name 
-845595      845595      Himanshu Kumar  8770885539              hkemail000@gmail.com  Madhubani               40          2021-07-18 13:57:37  Web Calling
