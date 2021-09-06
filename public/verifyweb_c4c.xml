@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:WebEnquiryDetails xmlns:ns0="http://dcmsnet.com/WebEnquiryDetails">
+  <EnquiryDetail>
+    <CustomerName>otp test</CustomerName>
+    <EmailID>otp@gmail.com</EmailID>
+    <Phone>9782055109</Phone>
+    <Source>40</Source>
+    <SourceCategory/>
+    <SubCategory/>
+  </EnquiryDetail>
+</ns0:WebEnquiryDetails>

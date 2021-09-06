@@ -1,0 +1,373 @@
+@keyframes uptext {
+    0% { -webkit-transform: translateY(100%); transform: translateY(100%); opacity:0;}
+    100% { -webkit-transform: translateY(0); transform: translateY(0); opacity:1;}  
+}
+@-webkit-keyframes uptext {
+    0% { -webkit-transform: translateY(100%); transform: translateY(100%); opacity:0;}
+    100% { -webkit-transform: translateY(0); transform: translateY(0); opacity:1;}  
+}
+
+@keyframes hoveruptext {
+    0% { -webkit-transform: translateY(0); transform: translateY(0);}
+    100% { -webkit-transform: translateY(-100%); transform: translateY(-100%);}  
+}
+@-webkit-keyframes hoveruptext {
+    0% { -webkit-transform: translateY(0); transform: translateY(0); opacity:0;}
+    100% { -webkit-transform: translateY(-100%); transform: translateY(-100%); opacity:1;} 
+}
+
+@keyframes menuuptext {
+    0% { -webkit-transform: translateY(20px); transform: translateY(20px); opacity:0;}
+    100% { -webkit-transform: translateY(0); transform: translateY(0); opacity:1;}  
+}
+@-webkit-keyframes menuuptext {
+    0% { -webkit-transform: translateY(20px); transform: translateY(20px); opacity:0;}
+    100% { -webkit-transform: translateY(0); transform: translateY(0); opacity:1;}  
+}
+
+@keyframes getscaled {
+    0% { -webkit-transform: scale(0.2); transform: scale(0.2); opacity:0;}
+    100% { -webkit-transform: scale(1); transform: scale(1); opacity:1;}  
+}
+@-webkit-keyframes getscaled {
+    0% { -webkit-transform: scale(0.2); transform: scale(0.2); opacity:0;}
+    100% { -webkit-transform: scale(1); transform: scale(1); opacity:1;}  
+}
+
+@keyframes hideshow {
+    0% { opacity:0;}
+    100% {  opacity:1;}  
+}
+@-webkit-keyframes hideshow {
+    0% {  opacity:0;}
+    100% {  opacity:1;}  
+}
+
+@keyframes bounce {
+    0% { -webkit-transform: scale(0); transform: scale(0); opacity:0;}
+    50% {  -webkit-transform: scale(1.2); transform: scale(1.2);opacity:1;}
+    100% { -webkit-transform: scale(1); transform: scale(1); opacity:1;}
+}
+@-webkit-keyframes bounce {
+    0% { -webkit-transform: translateX(-150px); transform: translateX(-150px); opacity:0;}
+    50% {  -webkit-transform: scale(1.2); transform: scale(1.2);opacity:1;}
+    100% { -webkit-transform: translateX(0); transform: translateX(0); opacity:1;}  
+}
+
+@keyframes moveDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+@-webkit-keyframes moveDown {
+     0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+
+@media only screen and (min-width: 993px){
+.section .owl-nav button, .section .blue-btn{opacity: 0;}
+.section.fp-completely .owl-nav button, .section.fp-completely .blue-btn{opacity: 1;}
+.section .heading{overflow: hidden;}
+.section.active .owl-nav button{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 1.2s;}
+.section.active .blue-btn{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 1.2s;}    
+
+
+.banner .view-360-link, .banner .chat-link, .banner .count-box, .banner .owl-carousel .owl-nav button.owl-next{opacity: 0;}
+.banner .item .left .image{opacity: 0;} 
+.banner .btn-grp, .banner.active .btn-grp a span{opacity: 0;}
+
+/*.fp-viewing-wide-range header .search-icon, .fp-viewing-location header .search-icon, .fp-viewing-client-say header .search-icon,
+.fp-viewing-solution header .search-icon, .fp-viewing-visual-design header .search-icon, .fp-viewing-image-gallery header .search-icon,
+ .fp-viewing-latest-updates header .search-icon, .fp-viewing-social-feed header .search-icon, .fp-viewing-customer-appreciation header .search-icon,
+.fp-viewing-footer header .search-icon{ opacity: 1; }*/
+
+.fp-viewing-wide-range header .search-icon img, .fp-viewing-location header .search-icon img, .fp-viewing-client-say header .search-icon img,
+.fp-viewing-solution header .search-icon img, .fp-viewing-visual-design header .search-icon img, .fp-viewing-image-gallery header .search-icon img,
+ .fp-viewing-latest-updates header .search-icon img, .fp-viewing-social-feed header .search-icon img, 
+ .fp-viewing-customer-appreciation header .search-icon img, .fp-viewing-footer header .search-icon img{ opacity: 1; }
+
+/*.banner.fp-completely .view-360-link, .banner.fp-completely .chat-link, .banner.fp-completely .count-box, 
+.banner.fp-completely .owl-carousel .owl-nav button.owl-next, .banner.fp-completely .left .image{opacity: 1;}
+.banner.fp-completely .btn-grp, .banner.fp-completely .btn-grp a span{opacity: 1;}*/
+
+
+.banner{transition:0.5s; position: relative;}
+.banner:after{position: absolute; content: ''; height: 100%; width: 100%; left: 0; background: rgba(255,255,255,0.45);
+pointer-events: none; opacity: 0; transition: 0.5s;}
+.fp-viewing-banner header .menu-list{animation-name:menuuptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.fp-viewing-banner header .search-icon {animation-name:getscaled; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}   
+/*.fp-viewing-banner header .search-icon img{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.5s;} */
+.banner .content .heading{ overflow: hidden; position: relative; }
+.banner.hover .content .heading1 h4{-webkit-transform: translateY(100%); transform: translateY(100%);}
+.banner.hover .content .heading2 h1{-webkit-transform: translateY(100%); transform: translateY(100%);}
+
+.banner.active .content .heading1 h1{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.banner.active .content .heading2 h4{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.banner.hover{background:url('../images/background1.jpg') no-repeat; background-size: 100% 100%;}
+.banner.hover:after{opacity: 1;}
+.banner.hover .content .heading1 h1{position: absolute; animation-name:hoveruptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.banner.hover .content .heading2 h4{position: absolute;animation-name:hoveruptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}   
+.banner.hover .content .heading1 h4{ display: block; animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.2s;}    
+.banner.hover .content .heading2 h1{ display: block; animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.banner.active .item .left .image span{ transition:0.7s;}    
+.banner.active .item .left .image.active span{ transform: scale(0.7); } 
+.banner.active .item .left .image.active .big{opacity: 0;}
+.banner.active .item .left .image.active .small{opacity: 1;}
+.banner.active .item .left .image.active span:after{opacity: 0; }
+.banner.active .item .left .image.hide .big{ display: none; }  
+.banner.active .item .left .image.hide .small{display: inline-block; transform: scale(0.4);} 
+.banner.load-active .item .left .image {animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;} 
+.banner.load-active .view-360-link{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.8s;}
+.banner.load-active .chat-link{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.8s;}
+.banner.load-active .count-box {animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.8s;}  
+.banner.load-active .owl-carousel .owl-nav button.owl-next{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.8s;} 
+.banner.load-active .btn-grp {animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.5s;} 
+.banner.active .btn-grp a span{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;animation-delay: 0.6s;} 
+
+.down-link a img{animation-name:moveDown; animation-fill-mode: forwards; animation-duration:1.5s;
+    animation-timing-function: ease-out;animation-iteration-count: infinite; display: inline-block; height: auto;}  
+.down-link a img:first-child{ animation-delay: -0.2s;}    
+.down-link a img:nth-child(2){ animation-delay: -0.5s;} 
+
+.wide-range .right h1, .wide-range .right h4, .wide-range.active .right .tab-list a, .wide-range .right h5, 
+.wide-range .right .blue-btn, .wide-range .right p, .wide-range .right .line-slider ul, .wide-range .left{opacity: 0;}
+.wide-range .bottom .item, .wide-range .right .line-slider .blu-line{opacity: 0;}
+
+.wide-range.fp-completely .right h1, .wide-range.fp-completely .right h4, .wide-range.fp-completely .right .tab-list a, .wide-range.fp-completely .right h5, 
+.wide-range.fp-completely .right .blue-btn, .wide-range.fp-completely .right p, .wide-range.fp-completely .right .line-slider ul, .wide-range.fp-completely .left{opacity:1;}
+.wide-range.fp-completely .bottom .item, .wide-range.fp-completely .right .line-slider .blu-line{opacity:1;}
+
+
+.wide-range.active .left{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:0.6s;}    
+.wide-range.active .right h1{animation-name:menuuptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.7s; }
+.wide-range.active .right h4{animation-name:menuuptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.7s;}    
+.wide-range.active .right .tab-list a {animation-name:getscaled; animation-fill-mode: forwards; animation-duration:0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.9s;} 
+.wide-range .right .line-slider{ width: 0px; transition: 0.5s; transition-delay: 0.8s; }     
+.wide-range.active .right .line-slider{width:861px;}
+.wide-range.active .right h5{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:1.2s;}
+.wide-range.active .right .blue-btn{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:1.4s;}  
+.wide-range.active .right p{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:0.8s;} 
+.wide-range.active .right .line-slider ul{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:0.9s;}  
+.wide-range.active .bottom .item{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:0.6s;}   
+.wide-range.active .bottom .item:nth-child(2){animation-delay:0.8s;}    
+.wide-range.active .bottom .item:nth-child(3){animation-delay:1s;} 
+.wide-range.active .bottom .item:nth-child(4){animation-delay:1.2s;} 
+.wide-range.active .bottom .item:nth-child(5){animation-delay:1.4s;}   
+.wide-range.active .bottom .item:last-child{animation-delay:1.5s;}   
+.wide-range.active .right .line-slider .blu-line{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:1.8s;}
+
+
+
+.locate-sec .heading h2, .locate-sec .heading .slelect-box .form-group, .locate-sec .map,
+.locate-sec .address-slider, .locate-sec .address-slider .owl-item, .locate-sec .address-slider .item{opacity: 0;}
+
+.locate-sec.fp-completely .heading h2, .locate-sec.fp-completely .heading .slelect-box .form-group, .locate-sec.fp-completely .map,
+.locate-sec.fp-completely .address-slider, .locate-sec.fp-completely .address-slider .owl-item, 
+.locate-sec.fp-completely .address-slider .item{opacity: 1;}
+
+
+.locate-sec.active .heading h2{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 0.7s;
+    animation-timing-function: ease-out;animation-delay:0.6s;}
+.locate-sec.active .heading .slelect-box .form-group {animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:0.6s;}   
+.locate-sec.active .heading .slelect-box .form-group:nth-child(2){animation-delay:0.8s;}    
+.locate-sec.active .heading .slelect-box .form-group:nth-child(3){animation-delay:1.0s;} 
+.locate-sec.active .heading .slelect-box .form-group:nth-child(4){animation-delay:1.2s;} 
+.locate-sec.active .heading .slelect-box .form-group:last-child{animation-delay:1.4s;} 
+.locate-sec.active .map{animation-name:getscaled; animation-fill-mode: forwards; animation-duration:0.7s;
+    animation-timing-function: ease-out;animation-delay: 0.7s;}  
+.locate-sec.active .address-slider{animation-name:getscaled; animation-fill-mode: forwards; animation-duration:0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.7s;}
+.locate-sec.active .address-slider .owl-item{animation-name:getscaled; animation-fill-mode: forwards; animation-duration:0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.9s;}
+.locate-sec.active .address-slider .item{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:1.1s;}
+
+
+.client-sec .heading h2, .client-sec .heading h5, .client-sec .client-slider .owl-item{opacity: 0;}
+.client-sec.fp-completely .heading h2, .client-sec.fp-completely .heading h5, .client-sec.fp-completely .client-slider .owl-item{opacity: 1;}
+
+.client-sec.active .heading h2{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;animation-delay: 0.7s;} 
+.client-sec.active .heading h5{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;animation-delay: 0.9s;}         
+.client-sec.active .client-slider .owl-item{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:1s;}
+.client-sec.active .client-slider .owl-item:nth-child(5){animation-delay:1.2s;}    
+.client-sec.active .client-slider .owl-item:nth-child(6){animation-delay:1.4s;} 
+
+.solution-sec .inner-box{opacity: 0;}
+.solution-sec.fp-completely .inner-box{opacity: 1;}
+.solution-sec.active .inner-box{animation-name:getscaled; animation-fill-mode: forwards; animation-duration:0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.5s;}
+
+.visual-sec.section .slick-slider, .visual-sec.section h3, .visual-sec.section h4{opacity: 0;}
+.visual-sec.fp-completely .slick-slider, .visual-sec.fp-completely h3, .visual-sec.fp-completely h4{opacity: 1;}
+
+.visual-sec.active .slider-for-visual{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out; animation-delay:0.7s;}
+.visual-sec.active .slider-visual-gallery{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 1s;}  
+.visual-sec.active h3 { animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 1s;}  
+.visual-sec.active h4{animation-name:menuuptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 1.2s; } 
+
+   
+.image-gallery h2{opacity: 0;}
+.image-gallery.fp-completely h2{opacity: 1;}
+.image-gallery.active h2 {display: block; animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.6s;}  
+
+.latest-sec, .latest-sec .latest-update .item{opacity: 0;}
+.latest-sec.fp-completely, .latest-sec.fp-completely .latest-update .item{opacity: 1;}
+
+.latest-sec.active{animation-name:getscaled; animation-fill-mode: forwards; animation-duration:0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.5s;} 
+.latest-sec.active .heading h2{opacity: 0;}
+.latest-sec.active .heading h2{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;animation-delay: 0.7s;}     
+.latest-sec.active .latest-update .item{animation-name:menuuptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.9s;}       
+.latest-sec.active .latest-update .item:nth-child(2){animation-delay: 1.1s;}   
+.latest-sec.active .latest-update .item:nth-child(3){animation-delay: 1.3s;}
+.latest-sec.active .dcm-sec p{animation-name:menuuptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 1.1s;}
+
+.social-sec .left, .social-sec .right{opacity: 0;} 
+.social-sec.fp-completely .left, .social-sec.fp-completely .right{opacity:1;} 
+
+.social-sec.active .left{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.6s;}
+.social-sec.active .right{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.9s;}    
+
+.customer-appreciation-sec.section .slider-box, .customer-appreciation-sec.section h4, .customer-appreciation-sec.section .customer-apprec-slider .owl-item,
+.customer-appreciation-sec.section .content{opacity: 0;}  
+.customer-appreciation-sec.fp-completely .slider-box, .customer-appreciation-sec.fp-completely h4, .customer-appreciation-sec.fp-completely .customer-apprec-slider .owl-item,
+.customer-appreciation-sec.fp-completely .content{opacity: 1;} 
+
+.customer-appreciation-sec.active .slider-box{animation-name:getscaled; animation-fill-mode: forwards; animation-duration:0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.5s;} 
+.customer-appreciation-sec.active h4{ animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.9s;}
+.customer-appreciation-sec.active .customer-apprec-slider .owl-item {animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.9s;}   
+.customer-appreciation-sec.active .customer-apprec-slider .owl-item:nth-child(2){animation-delay:1.1s;}  
+.customer-appreciation-sec.active .customer-apprec-slider .owl-item:nth-child(3){animation-delay:1.3s;}   
+.customer-appreciation-sec.active .content{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.9s;}
+
+footer.section, footer.section .top-footer, footer.section .top-footer h4,  .foot.sectioner-menu,
+  footer.section .dwnload-app,  footer.section .bottom-footer{opacity: 0;} 
+footer.section.fp-completely, footer.section.fp-completely .top-footer, footer.section.fp-completely .top-footer h4, footer.section.fp-completely .footer-menu, 
+footer.section.fp-completely .dwnload-app, footer.section.fp-completely .bottom-footer{opacity: 1;} 
+footer.section .footer-menu li{opacity: 0; transition: 0.5s;}
+footer.fp-completely li{opacity: 1;}
+
+footer.active{animation-name:getscaled; animation-fill-mode: forwards; animation-duration:0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.5s;} 
+footer.active .top-footer{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 0.8s;} 
+footer.active .top-footer h4{animation-name:menuuptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 1.1s;}  
+footer.active .footer-menu{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 1s; }  
+footer.active .dwnload-app{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 1.2s; }       
+footer.active .bottom-footer{animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 0.5s;
+    animation-timing-function: ease-out;animation-delay: 1.4s; }   
+footer.active .footer-menu li{opacity: 1; transition-delay: 1.1s;} 
+footer.active .footer-menu li:nth-child(2){transition-delay: 1.2s;} 
+footer.active .footer-menu li:nth-child(3){transition-delay: 1.4s;}
+footer.active .footer-menu li:nth-child(4){transition-delay: 1.6s;}
+footer.active .footer-menu li:nth-child(5){transition-delay: 1.8s;}
+footer.active .footer-menu li:nth-child(6){transition-delay: 2s;}
+footer.active .footer-menu li:nth-child(7){transition-delay: 2.2s;}
+footer.active .footer-menu li:nth-child(8){transition-delay: 2.4s;}
+footer.active .footer-menu li:nth-child(9){transition-delay: 2.6s;}
+footer.active .footer-menu li:nth-child(10){transition-delay: 2.8s;}
+footer.active .footer-menu li:nth-child(11){transition-delay: 3s;}
+footer.active .footer-menu li:nth-child(12){transition-delay:3.2s;}
+
+}
+
+
+@media only screen and (max-width: 992px){
+.banner{transition:0.5s; position: relative;}    
+.banner .content .heading{ overflow: hidden; position: relative; }
+.banner.hover .content .heading1 h4{-webkit-transform: translateY(100%); transform: translateY(100%);}
+.banner.hover .content .heading2 h1{-webkit-transform: translateY(100%); transform: translateY(100%);}
+
+.banner .content .heading1 h1{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.banner .content .heading2 h4{animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.banner.hover{background:url('../images/tab-background.jpg') no-repeat; background-size: 100% 100%; }
+.banner.hover .content .heading1 h1{position: absolute; animation-name:hoveruptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.banner.hover .content .heading2 h4{position: absolute;animation-name:hoveruptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}   
+.banner.hover .content .heading1 h4{ display: block; animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out; animation-delay: 0.2s;}    
+.banner.hover .content .heading2 h1{ display: block; animation-name:uptext; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;}
+.banner .item .left .image span{ transition:1s;-webkit-transform: scale(1);transform: scale(1); } 
+.banner .item .left .image img{transition: 1s;}   
+.banner .item .left .image.active span{-webkit-transform: scale(0.7); transform: scale(0.7); } 
+.banner .item .left .image.active .big{opacity: 0;}
+.banner .item .left .image.active .small{opacity: 1;}
+.banner .item .left .image.active span:after{opacity: 0; }
+/*.banner.hover .item .left .image {animation-name:hideshow; animation-fill-mode: forwards; animation-duration: 1s;
+    animation-timing-function: ease-out;} */   
+}
+
+@media only screen and (max-width:480px){
+  .banner.hover{background:url('../images/mob-background1.jpg') no-repeat; background-size: cover; }
+}

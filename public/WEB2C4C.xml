@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:WebEnquiryDetails xmlns:ns0="http://dcmsnet.com/WebEnquiryDetails">
+  <EnquiryDetail>
+    <CustomerName>Ashok</CustomerName>
+    <EmailID>ashokkgupta69@gmail.com</EmailID>
+    <Phone>9839603456</Phone>
+    <Source>20</Source>
+    <SourceCategory/>
+    <SubCategory/>
+  </EnquiryDetail>
+</ns0:WebEnquiryDetails>
